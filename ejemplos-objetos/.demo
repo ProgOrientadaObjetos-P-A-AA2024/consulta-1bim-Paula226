@@ -1,0 +1,51 @@
+# Definición de la clase CuentaBancaria
+class CuentaBancaria:
+    def __init__(self, titular, saldo):
+        self.titular = titular
+        self.saldo = saldo
+
+    def depositar(self, cantidad):
+        self.saldo += cantidad
+
+    def retirar(self, cantidad):
+        if cantidad <= self.saldo:
+            self.saldo -= cantidad
+        else:
+            print("Saldo insuficiente")
+
+    def mostrar_saldo(self):
+        print(f"El saldo de la cuenta de {self.titular} es {self.saldo} euros")
+
+# Crear objetos de la clase CuentaBancaria
+cuenta1 = CuentaBancaria("Carlos", 1000)
+cuenta2 = CuentaBancaria("Lucía", 500)
+
+# Interactuar con los objetos
+cuenta1.depositar(500)
+cuenta1.mostrar_saldo()  # Salida: El saldo de la cuenta de Carlos es 1500 euros
+
+cuenta2.retirar(200)
+cuenta2.mostrar_saldo()  # Salida: El saldo de la cuenta de Lucía es 300 euros
+
+
+class Rectangulo:
+    def __init__(self, largo, ancho):
+        self.largo = largo
+        self.ancho = ancho
+
+    def area(self):
+        return self.largo * self.ancho
+
+    def perimetro(self):
+        return 2 * (self.largo + self.ancho)
+
+# Crear objetos de la clase Rectangulo
+rectangulo1 = Rectangulo(5, 3)
+rectangulo2 = Rectangulo(10, 7)
+
+# Interactuar con los objetos
+print(f"Área del rectángulo 1: {rectangulo1.area()}")       # Salida: Área del rectángulo 1: 15
+print(f"Perímetro del rectángulo 1: {rectangulo1.perimetro()}")  # Salida: Perímetro del rectángulo 1: 16
+
+print(f"Área del rectángulo 2: {rectangulo2.area()}")       # Salida: Área del rectángulo 2: 70
+print(f"Perímetro del rectángulo 2: {rectangulo2.perimetro()}")  # Salida: Perímetro del rectángulo 2: 34

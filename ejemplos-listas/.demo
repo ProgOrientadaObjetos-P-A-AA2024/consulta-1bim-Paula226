@@ -1,0 +1,26 @@
+# Definición de una lista
+numeros = [1, 2, 3, 4, 5]
+
+# Agregar un elemento a la lista
+numeros.append(6)
+print(numeros)  # Salida: [1, 2, 3, 4, 5, 6]
+
+# Eliminar un elemento de la lista
+numeros.remove(3)
+print(numeros)  # Salida: [1, 2, 4, 5, 6]
+
+
+# Definición de una lista de frutas
+frutas = ["manzana", "plátano", "cereza", "naranja"]
+
+# Agregar una fruta a la lista
+frutas.append("kiwi")
+print(frutas)  # Salida: ['manzana', 'plátano', 'cereza', 'naranja', 'kiwi']
+
+# Eliminar una fruta de la lista
+frutas.remove("plátano")
+print(frutas)  # Salida: ['manzana', 'cereza', 'naranja', 'kiwi']
+
+# Ordenar la lista
+frutas.sort()
+print(frutas)  # Salida: ['cereza', 'kiwi', 'manzana', 'naranja']

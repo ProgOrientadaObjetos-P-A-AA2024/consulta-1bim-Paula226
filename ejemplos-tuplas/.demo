@@ -1,0 +1,20 @@
+# Definición de una tupla de colores
+colores = ("rojo", "verde", "azul")
+
+# Iteración sobre los elementos de la tupla
+for color in colores:
+    print(color)
+
+# Salida:
+# rojo
+# verde
+# azul
+
+# Definición de una tupla con números repetidos
+numeros = (1, 2, 3, 4, 5, 1, 2, 1)
+
+# Uso del método count para contar las ocurrencias de un valor
+print(numeros.count(1))  # Salida: 3
+
+# Uso del método index para encontrar la primera ocurrencia de un valor
+print(numeros.index(2))  # Salida: 1
